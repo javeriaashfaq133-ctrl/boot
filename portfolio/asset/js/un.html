@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script > 	// ---------- Comparison Operators ----------
+let x = 7;
+let y = "7";
+
+// Equality
+if (x == y) { 
+    console.log("Equality (==): x==y is true");
+}
+
+// Strict Equality
+if (x === y) { 
+    console.log("Strict Equality (===): x and y are same in value and type");
+} else {
+    console.log("Strict Equality (===): x and y are not same in value and type");
+}
+
+// Strict Not Equal
+if (x !== y) { 
+    console.log("Strict not Equal (!==): x and y are diffred in value and type");
+}
+
+// Not Equal
+if (x != 10) { 
+    console.log("Not Equal (!=): x is not 10");
+}
+
+// Greater than
+if (x > 5) { 
+    console.log("Greater than (>): x is greater than 5");
+}
+
+// Less than
+if (x < 10) { 
+    console.log("Less than (<): x is Less than 10");
+}
+
+// Greater than or Equal
+if (x >= 7) { 
+    console.log("Greater than or Equal (>=): x is 7 or more");
+}
+
+// Less than or Equal
+if (x <= 10) { 
+    console.log("Less than or Equal (<=): x is 10 or less");
+}
+
+// ---------- Grade Example ----------
+let marks = 82;
+
+if (marks >= 80) {
+    console.log("Grade: A");
+}
+  if (marks >= 75) {
+    console.log("Grade: B");
+}
+ if (marks >= 60) {
+    console.log("Grade: C");
+} 
+if (marks >= 50) {
+    console.log("Grade: D");
+}
+ if(marks <=50){
+    console.log("Grade: F");
+}
+
+// ---------- Logical Operators ----------
+let age = 15;
+let operator = true;
+
+// AND Operator
+if (age >= 15 && operator) {
+    console.log("And operator (&&): Eligible to vote");
+}
+
+// OR Operator
+if (age >= 15 || operator) { 
+    console.log("OR operator (||): Either age is 15 or has CNIC");
+}
+
+// NOT Operator
+if (!(age < 15)) {
+    console.log("Not operator (!): Age is not less than 15");
+}
+
+// ---------- Unary Operators ----------
+let num = 5;
+
+// Pre-increment
+if (num < 10) {
+    ++num; 
+    console.log("Pre-increment (++): num is now " + num);
+}
+
+// Post-increment
+if (num < 10) {
+    num++; 
+    console.log("Post-increment (++): num is now " + num);
+}
+
+// Pre-decrement
+if (num > 0) {
+    --num; 
+    console.log("Pre-decrement (--): num is now " + num);
+}
+
+// Post-decrement
+if (num > 0) {
+    num--;  
+    console.log("Post-decrement (--): num is now " + num);
+}
+
+// ---------- Arithmetic Operators with Conditions ----------
+let a = 12;
+let b = 4;
+
+if (a > 0 && b > 0) {
+    console.log("Addition (+): " + (a + b));
+}
+
+if (a > b) {
+    console.log("Subtraction (-): " + (a - b));
+}
+
+if (a != 0 && b != 0) {
+    console.log("Multiplication (*): " + (a * b));
+}
+
+if (b != 0) {
+    console.log("Division (/): " + (a / b));
+}
+
+if (b != 0) {
+    console.log("Modulus (%): " + (a % b));
+}
+
+if (a > 1 && b > 1) {
+    console.log("Exponentiation (**): " + (a ** b));
+}
+
+// loops
+// ---------- For Loop ----------
+
+for (let A = 1; A <= 7; A++) {
+    console.log("Step: " + A);
+}
+// ---------- While Loop ----------
+let B = 1;
+while (B <= 5) {
+    console.log("number: " + B);
+    B++;
+}
+
+// ---------- Do While Loop ----------
+let C = 1;
+do {
+    console.log("num: " + C);
+    C++;
+} while (C <= 6);</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position static</title>
+    <style>
+        body{
+            margin: 0px; 
+            background-image: linear-gradient( rgb(182, 101, 101),pink );
+        }
+        *{
+            text-decoration: none;
+        }
+        .navbar{
+            background-image: linear-gradient(rgb(104, 101, 101),rgb(255, 82, 82));
+            font-family:calibri ;
+            padding-right:15px ;
+            padding-left: 15px;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo a{
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+            padding-left: 30px;
+        }
+        li a{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            margin-right:30px;
+        }
+       button{
+            background-color:red;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            border: none;
+        }
+        button a{
+            color:black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .div1, .div2, .div3{
+            width: 20em;
+            height: 20em;
+            background-color:#fff;
+            box-shadow:5px 5px 25px black;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+        .container{
+            display: flex;
+            height: 200vh;
+            align-items: center;
+            gap: 1em;
+            flex-grow: 1;
+            justify-content: center;
+            padding: 0 40px;
+        }
+        h1,h2,h3{
+            color: red;
+        }
+        button:hover{
+            background-color: aqua;
+            color: black;
+        }
+        ul{
+            padding-left:600px;
+            margin: 0px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            
+        }
+        li {
+            padding: 10px 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 50px;
+            color: black;
+        }
+         .div1,.div2,.div3{
+                width: 80%;
+                padding-left: 30px;
+                background-color:black;
+                color: white;
+                margin-bottom:800px ;
+            }
+        @media(max-width:600px){
+            .container{
+                height: 100%;
+                flex-direction: column;
+            }
+            .div1,.div2,.div3{
+                max-width: 80%;
+                padding: 30px;
+                background-color:red;
+                color: black;
+            }
+             h1,h2,h3{
+                color: white;
+             }
+             button{
+                background-color: white;
+                color: rgb(158, 44, 44);
+             }
+
+        }
+    </style>
+</head>
+<body>
+   <nav class="navbar">
+        <div>
+            <div class="logo"><a href="#">LOREM IPSUM DOLOR</a></div> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">contact</a></li>
+             <button class="fixed"><a href="#">SignIn</a></button>
+             <button class="fixed"><a href="#">Signup</a></button>
+
+        </div>
+    </nav>
+
+    </div>
+    <div class="container">
+        <div class="div1">
+            <h1>01</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fugit est eum, libero, laboriosam ipsa doloremque nisi totam
+                 natus harum explicabo ipsum? Officiis, hic. Veritatis quod vitae doloremque dolorum mollitia.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis dolor dolore consequuntur, quae vitae deleniti itaque sunt, porro
+                  fuga quia recusandae dicta! Esse inventore nihil doloribus consectetur. Enim, praesentium!
+            </p>
+            <button>Read More</button>
+        </div>
+        <div class="div2">
+             <h1>02</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fugit est eum, libero, laboriosam ipsa doloremque nisi totam
+                 natus harum explicabo ipsum? Officiis, hic. Veritatis quod vitae doloremque dolorum mollitia.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis dolor dolore consequuntur, quae vitae deleniti itaque sunt, porro
+                  fuga quia recusandae dicta! Esse inventore nihil doloribus consectetur. Enim, praesentium!
+            </p>
+            <button>Read More</button>
+        </div>
+        <div class="div3">
+             <h1>03</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fugit est eum, libero, laboriosam ipsa doloremque nisi totam
+                 natus harum explicabo ipsum? Officiis, hic. Veritatis quod vitae doloremque dolorum mollitia.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis dolor dolore consequuntur, quae vitae deleniti itaque sunt, porro
+                  fuga quia recusandae dicta! Esse inventore nihil doloribus consectetur. Enim, praesentium!
+            </p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+</body>
+</html>

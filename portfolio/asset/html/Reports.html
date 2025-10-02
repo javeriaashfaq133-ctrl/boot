@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Promise - Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script type="text/javascript" src="https://digitalpromise.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://digitalpromise.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://digitalpromise.org/wp-content/plugins/climber-core-plugin/js/SmoothScroll.js?ver=6.8.2" id="smoothscroll-js"></script>
+<script type="text/javascript" src="https://digitalpromise.org/wp-content/themes/devdmbootstrap3/js/master.js?ver=1758732132507" id="master-js-js"></script>
+<link rel="stylesheet" id="learndash_lesson_video-css" href="//digitalpromise.org/wp-content/plugins/sfwd-lms/themes/legacy/templates/learndash_lesson_video.min.css?ver=4.9.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="tailwind-css" href="https://digitalpromise.org/wp-content/themes/devdmbootstrap3/tailwind.compiled.css?ver=1757535315624" type="text/css" media="all">
+<link rel="stylesheet" id="typekit-css-css" href="https://use.typekit.net/vft1fmr.css?ver=6.8.2" type="text/css" media="all">
+<link rel="stylesheet" id="styles-css" href="https://digitalpromise.org/wp-content/themes/devdmbootstrap3/style.css?ver=1757535315624" type="text/css" media="all">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding-top: 90px;
+      }
+.navbar {
+  width: 100%;
+  height: 70px; 
+  background: rgba(255, 255, 255, 0.3) !important;
+  padding: 0px 60px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center; 
+   box-shadow: none !important;
+}
+
+
+.navbar .logo img {
+  height: 80px; 
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+/* Nav links */
+.nav-link {
+  color: #333 !important;
+  font-weight: 600;
+  margin-right: 20px;
+  font-size: 1.05rem;
+}
+.nav-link:hover,
+.nav-link.active {
+  border-bottom: 2px solid #4f5aa8; 
+}
+.search-btn {
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: none;
+}
+.search-btn i {
+  font-size: 20px;
+  color: #0b0808;
+  margin-right: 8px;
+}
+
+/* Hover ko same rakha */
+.search-btn:hover {
+  background: #f5f5f5 !important;
+}
+
+.search-btn:hover i {
+  color: #0b0808 !important;
+}
+ .search-overlay {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 30px;
+  padding: 8px 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.search-bar input:focus {
+  box-shadow: none;
+}
+.search-bar i {
+  margin-right: 8px;
+  color: #555;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.search-bar .close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popular-searches {
+  margin-top: 20px;
+}
+
+.popular-searches h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tags button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.tags button:hover {
+  background: #eee;
+}
+      /* Header Section */
+      .dp__header {
+        background: #f6f6fd;
+        padding: 40px 60px 0px 60px;
+        margin: 100px 50px;
+        height: 400px;
+        border-radius: 5px;
+       
+      }
+      .dp__header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .dp__header__description {
+        flex: 1;
+      }
+      .dp__header__description h2 {
+        color: #101113;
+        margin-bottom: 20px;
+      }
+      .dp__header__description__text {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #5e5d5d;
+        max-width: 400px;
+        margin-bottom: 200px;
+      }
+      .dp__header__image_holder {
+        flex: 1;
+        display: flex;
+      }
+      .dp__header__image img {
+        max-width: 100%;
+       margin-left: 100px;
+       margin-top: 120px;
+      }
+
+      @media (max-width: 768px) {
+        .dp__header__inner {
+          flex-direction: column;
+          text-align: center;
+        }
+        .dp__header__image_holder {
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+        }
+        .dp__header__image img {
+          max-width: 100%;
+          margin: 0;
+        }
+      }
+      
+     .sidebar {
+  position: sticky;
+  top: 90px;              
+  padding: 50px;
+}
+.sidebar .fw-bold {
+  font-size: 16px;
+}
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+      .card-img-custom {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .pub-title {
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        line-height: 1.4em;
+      }
+      .custom-link {
+        text-decoration: none;
+        color: #4f4f4f;
+      }
+      .custom-link:hover {
+        color: #3f4888;
+      }
+      .intro-section {
+        margin-top: 60px;
+      }
+      .resource-btn {
+        display: inline-block;
+        background-color: #3f4888;
+        color: #fff;
+        padding: 17px 20px;
+        border-radius: 7px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      /* --- Added Promo Section --- */
+      .promo {
+        background: #4f5aa8;
+        color: #fff;
+        padding: 100px 20px;
+        margin-top: 60px;
+      }
+      .promo .wrap {
+        max-width: 1260px;
+        margin: 0 auto;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .promo h1 {
+        font-weight: 300;
+        margin: 0;
+        font-size: 64px;
+        line-height: 1.1;
+      }
+      .promo .lead {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .promo .btn {
+        display: inline-block;
+        padding: 14px 30px;
+        border-radius: 8px;
+        background: #fff;
+       color: #4f5aa8;
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      }
+      .promo-footer {
+        background: #fff;
+        padding: 28px 20px;
+      }
+      .promo-footer .links {
+        max-width: 1260px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .promo-footer a {
+        margin-right: 16px;
+        font-size: 15px;
+        color: #333;
+        text-decoration: underline;
+      }
+      
+.promo-footer a:hover {
+  color:#3f4888 ; 
+  transform: translateY(-3px);
+}
+.socials {
+  display: flex;
+  gap: 10px;                 
+  justify-content: center;   
+  margin-top: 20px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;            
+  height: 48px;
+  background-color: white;
+}
+
+
+.socials img {
+  width: 30px;  
+  height: 30px;
+}
+   .floating-cta {
+      position: fixed;
+      bottom: 0px;
+      right: 80px;
+      background: #3f4888;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 5px;
+      font-weight: 600px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+      z-index: 1000;
+    }
+    .floating-cta:hover {
+      background: #3f4888;
+    }
+
+#searchModal .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+#searchModal .d-flex input.form-control {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  background: transparent;
+}
+
+#searchModal .d-flex {
+  align-items: center;
+  gap: 10px;
+}
+    /* Modal Background */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Modal Content Box */
+    .modal-content {
+      background: #fff;
+      padding: 0;
+      border-radius: 12px;
+      max-width: 400px;   /* ✅ width kam */
+      width: 90%;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      animation: fadeIn 0.3s ease;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    /* Modal Header (Heading + Close Button) */
+    .modal-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #439ad0, #367fad);
+    }
+    .modal-header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      margin: 0;
+    }
+    .modal-header .close-btn {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+#searchModal .modal-dialog {
+  max-width: 1200px !important;  
+  width: 95% !important;        
+}
+
+#searchModal .modal-content {
+  border-radius: 20px !important;
+  padding: 30px !important;
+}
+    /* Form Styling */
+    #pardot-form {
+      background: transparent;
+      padding: 20px 25px;
+    }
+    #pardot-form label {
+      font-size: 15px;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+    #pardot-form input[type=text] {
+      background-color: #f7f7f7;
+      border-radius: 5px;
+      padding: 10px;
+      border: 1px solid #cacaca;
+      font-size: 16px;
+      color: #555;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+    #pardot-form input[type=checkbox] {
+      margin-right: 6px;
+      transform: scale(1.1);
+    }
+    #pardot-form .checkbox-group {
+      margin-bottom: 15px;
+    }
+    #pardot-form input[type=submit] {
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      color: #fff;
+      border: none;
+      transition: background-color 0.3s;
+      min-width: 120px;
+      background-color: #439ad0;
+      padding: 10px;
+      font-size: 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+    #pardot-form input[type=submit]:hover {
+      background-color: #367fad;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    
+</style>
+  </head>
+  <body class="container-fluid py-4">
+   <!-- navbar -->
+    <div class="dp__nav" id="dpnav">
+
+        <div class="lockout">
+
+            <div class="dp__nav__inner">
+
+                <div class="dp__nav__logo">
+                    <a href="../html/home page.html" title="Digital Promise">
+                        <img src="https://digitalpromise.org/wp-content/themes/devdmbootstrap3/img/DP_logo_2020.svg" alt="Digital Promise home">
+                    </a>
+                </div>
+
+                <button class="dp__nav__hamburger" aria-label="open mobile menu" id="dphamburger">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>
+
+                <!-- Desktop Links and Menus -->
+                <nav class="dp__nav__desktop" aria-label="Desktop navigation menu">
+                    <ul>
+                        <li class="dp__nav__item active"><a href="../html/our work.html" title="Our Work">Our Work</a></li>
+
+                        <li class="dp__nav__item"><a href="../html/Reports.html" title="Reports">Reports</a></li>
+
+                        <li class="dp__nav__item"><a href="../html/Blog.html" title="Blog">Blog</a></li>
+
+                        <li class="dp__nav__item"><a href="../html/About.html" title="About">About</a></li>
+                    </ul>
+
+                    <div class="dp__search" id="dpsearch--desktop" role="dialog" aria-modal="true" aria-label="Search overlay that displays a search input, autocomplete results, and popular topics.">
+    
+    <div class="dp__search__overlay" id="dpsearchoverlay"></div>
+        <div class="lockout">
+            <div class="dp__search__inner">
+                <div class="dp__search__box" id="dpsearchbox">
+                    <span class="dp__search__icon"><img src="/wp-content/uploads/2018/03/icon-search.svg" alt=""></span>
+                    <div class="sr-only">Activating the following search input element will open the search modal.</div>
+                    <label id="searchlabel" class="sr-only" for="dpsearchbox_input" aria-hidden="true">Site search input box.</label>
+                    <input type="text" id="dpsearchbox_input" class="dp__search__input first-focusable-element" aria-describedby="searchlabel" aria-autocomplete="list" aria-controls="dpsuggestions" aria-haspopup="listbox" aria-expanded="false" value="" placeholder="Search">
+                                        <ul class="dp__search__suggestions" id="dpsuggestions" role="listbox" aria-labelledby="searchlabel"></ul>
+                </div>
+                <button class="dp__search__close" id="dpsearchclose" aria-label="close"></button>
+            </div>
+        </div>
+
+        <div class="dp__search__results">
+            <div class="lockout">
+                <div class="dp__popular dp__popular--search" id="dppopularsearch">
+    <h2>Popular Searches</h2>
+            <ul class="dp__options">
+        <li><button role="link" class="dp__option " tabindex="0" type="topics" value="research"><span>Research</span></button></li><li><button role="link" class="dp__option " tabindex="0" type="topics" value="digital-equity"><span>Digital Equity</span></button></li><li><button role="link" class="dp__option " tabindex="0" type="initiatives" value="micro-credentials"><span>Micro-credentials</span></button></li><li><button role="link" class="dp__option " tabindex="0" type="topics" value="inclusive-innovation"><span>Inclusive Innovation</span></button></li><li><button role="link" class="dp__option " tabindex="0" type="topics" value="networks-applications"><span>Networks &amp; Programs</span></button></li><li><button role="link" class="dp__option " tabindex="0" type="initiatives" value="league-of-innovative-schools"><span>League of Innovative Schools</span></button></li><li><button role="link" class="dp__option last-focusable-element" tabindex="0" type="initiatives" value="verizon-innovative-learning-schools"><span>Verizon Innovative Learning Schools</span></button></li>    </ul>
+</div>
+         </div>
+        </div>    </div>
+        <!-- navbar -->
+<script>
+    function isJsonString(str) {
+        try {
+            JSON.parse(str);
+        } catch (e) {
+            return false;
+        }
+        return true;
+    }
+
+    function closeSearch(search) {
+        search.addClass('closing').removeClass('dp__search--active');
+        search.closest('.dp__nav').removeClass('dp__nav--search');
+        setTimeout(() => {
+            search.removeClass('closing');
+        }, 400);
+        search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+        search.find('.dp__search__box input').attr('aria-expanded', 'false');
+    }
+    jQuery(document).ready(function() {
+
+        if(!isJsonString(sessionStorage.getItem("predictive_array"))) {
+            sessionStorage.removeItem("predictive_array");
+        }
+        
+        let predictive_array = JSON.parse(sessionStorage.getItem("predictive_array"));
+
+        if(typeof predictive_array === 'undefined' || !predictive_array) {
+            predictive_array = [];
+
+            console.log('got here')
+
+            jQuery.getJSON('/wp-content/themes/devdmbootstrap3/queries/search.json', function(data) {
+                predictive_array = Object.values(data).sort( sortByStatus );
+                sessionStorage.setItem("predictive_array", JSON.stringify(predictive_array));
+            });
+        }
+
+        var search = jQuery('#dpsearch--desktop');
+
+        /** Trap keyboard users in the search overlay while active */
+
+        let firstFocusableElement = search.find('.first-focusable-element');
+        let lastFocusableElement = search.find('.last-focusable-element');
+
+        search.on('keydown', function(e) {
+            if(search.hasClass('dp__search--active')) {
+                if(e.target === firstFocusableElement[0] && e.key == 'Tab' && e.shiftKey) {
+                    console.log('got here 1');
+                    e.preventDefault();
+                    lastFocusableElement.focus();
+                    search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+                    search.find('.dp__search__box input').attr('aria-expanded', 'false');
+                } else if(e.target === lastFocusableElement[0] && e.key == 'Tab' && !e.shiftKey) {
+                    console.log('got here 2');
+                    e.preventDefault();
+                    firstFocusableElement.focus();
+                }
+            }
+        })
+
+        checkScroll(jQuery(window));
+        jQuery(window).on('scroll', function() {
+            checkScroll(jQuery(this));
+        });
+        search.prev('.dp__nav__item').find('a').on('keyup', function(e) {
+            if ((e.key === 'Tab' && e.shiftKey)) {
+                closeSearch(search);
+            }
+        })
+        search.find('.dp__search__input').on('click keyup', function(e) {
+            if (e.key == 'Escape') {
+                closeSearch(search);
+            } else if(e.key !== 'Tab' && e.key !== 'Shift') {
+                e.stopPropagation();
+                if(!search.hasClass('dp__search--active') && !search.hasClass('closing')) {
+                    search.addClass('dp__search--active');
+                    search.closest('.dp__nav').addClass('dp__nav--search');
+                    jQuery(this).focus();
+                }
+            }
+        });
+        search.find('.dp__search__input').on('focus', function() {
+            search.find('.dp__search__box label').attr('aria-hidden', 'false');
+        });
+        search.find('.dp__search__input').on('focusout', function() {
+            search.find('.dp__search__box label').attr('aria-hidden', 'true');
+        });
+        search.find('.dp__search__close, .dp__search__overlay').on('click', function() {
+            if(search.hasClass('dp__search--active')) {
+                closeSearch(search);
+            }
+        });
+        
+        var x_timer;
+        search.find('.dp__search__box input').on('keyup', function (e){
+            if(e.key !== 'Escape' && e.key !== 'Enter' && e.key !== 'Tab' && e.key !== 'Shift') {
+                predictive_search();
+            } else if(e.key == 'Enter') {
+                if(search.find('.dp__search__box input').val().length >= 2) {
+                    window.location = 'https://digitalpromise.org//search/?q=' + search.find('.dp__search__box input').val();
+                }
+            } else if(e.key == 'Escape') {
+                if(search.hasClass('dp__search--active')) {
+                    search.addClass('closing').removeClass('dp__search--active');
+                    search.closest('.dp__nav').removeClass('dp__nav--search');
+                    setTimeout(() => {
+                        search.removeClass('closing');
+                    }, 400);
+                }
+            }
+        });
+
+        // Predictive Search Tabbing
+
+        search.find('.dp__search__box input').on('keydown', function(e) {
+            if(e.keyCode == 40) {
+                e.preventDefault();
+                if(search.find('.dp__search__suggestions').hasClass('dp__search__suggestions--active')) {
+                    search.find('.dp__search__suggestion').first().focus();
+                }
+            }
+        });
+
+        jQuery('#dpmobilesearch').on('click', function() {
+            if(search.find('.dp__search__box input').val().length >= 2) {
+                window.location = 'https://digitalpromise.org//search/?q=' + search.find('.dp__search__box input').val();
+            }
+        });
+
+        search.find('.dp__search__box input').on('click keyup', function (e){
+            if(e.key !== 'Tab' && e.key !== 'Shift' && e.key !== 'Escape') {
+                predictive_search();
+            }
+        });
+
+        function predictive_search() {
+
+            if(search.find('.dp__search__box input').val() == null || search.find('.dp__search__box input').val() == '') {
+                search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+                search.find('.dp__search__box input').attr('aria-expanded', 'false');
+            } else {
+
+                search.find('.dp__search__box input').attr('aria-expanded', 'true');
+
+                var results = '';
+
+                var resultsArr = [];
+                
+                predictive_array.forEach(obj => {
+                    if (obj.title.toLowerCase().indexOf(search.find('.dp__search__box input').val().toLowerCase()) > -1) {
+                        if(resultsArr.length < 8) {
+                            resultsArr.push(obj);
+                        }
+                    } else if (obj.alt) {
+                        if(obj.alt.toLowerCase().indexOf(search.find('.dp__search__box input').val().toLowerCase()) > -1) {
+                            if(resultsArr.length < 8) {
+                                resultsArr.push(obj);
+                            }
+                        }
+                    } else if (obj.categories) {
+                        if(obj.categories.toLowerCase().indexOf(search.find('.dp__search__box input').val().toLowerCase()) > -1) {
+                            if(resultsArr.length < 8) {
+                                resultsArr.push(obj);
+                            }
+                        }
+                    }
+                });
+
+                results += '<li class="results-count sr-only" aria-live="assertive">' + resultsArr.length + ' results found</li>';
+
+                resultsArr.forEach(function (obj, index) {
+                    results += "<li role='option' class = 'mb-0 w-full' id = 'suggestion_" + index + "'><a class = 'dp__search__suggestion' tabindex='0' href = '" + obj.link + "' " + (obj.target == 'external' ? 'target = "_blank" rel = "noopener"': '') + ">" + (obj.status == 'featured' ? '<img alt = "" class = "dp__post_list__featured_icon" src = "https://digitalpromise.org/wp-content/themes/devdmbootstrap3/img/icon-home.png" />' : '') + "<span class='dp__search__suggestion__text'>" + obj.title + "</span>" + (obj.parent !== '' && obj.status !== 'featured' ? '<span class = "dp__faint">' + obj.parent + '</span>' : '' ) + "</a></li>";
+                });
+
+                if(results == '') {
+                    results = "<div class = 'dp__search__suggestion disabled'><span>No Results Found</span></div>";
+                }
+
+                search.find('.dp__search__suggestions').html(results).addClass('dp__search__suggestions--active');
+
+                jQuery('.dp__search__suggestion').on('keydown', function(e) {
+                    if(e.key == 'Tab' && jQuery(this).closest('li').is(':last-child') && !e.shiftKey) {
+                        search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+                    }
+                });
+            }
+        }
+
+        search.on('click', function(e) {
+            search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+        });
+
+        jQuery('.dp__nav__mobile, #dphamburger').on('click', function(e) {
+            search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+        });
+
+        window.addEventListener('keydown', function (e) {
+            if(e.key == 'Escape' && search.find('.dp__search__suggestions').hasClass('dp__search__suggestions--active')) {
+                search.find('.dp__search__suggestions').html('').removeClass('dp__search__suggestions--active');
+            }
+        });
+
+        search.find('.dp__option').on('click', function() {
+            window.location = 'https://digitalpromise.org/search/?q=&' + jQuery(this).attr('type') + '=' + jQuery(this).attr('value');
+        });
+        function checkScroll(window) {
+            var scrollDist = window.scrollTop();
+            if(scrollDist >= 10) {
+                if(!search.hasClass('dp__search--fixed')) {
+                    search.addClass('dp__search--fixed');
+                }
+            } else {
+                if(search.hasClass('dp__search--fixed')) {
+                    search.removeClass('dp__search--fixed');
+                }
+            }
+        }
+    });
+
+    function sortByStatus( a, b ) {
+        if ( a.status == 'featured' && b.status !== 'featured' ){
+            return -1;
+        }
+        if ( a.status !== 'featured' && b.status == 'featured' ){
+            return 1;
+        }
+        return 0;
+    }
+</script> 
+                </nav>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="dp__nav__mobile" id="dpmobilemenu" role="dialog" aria-modal="true" aria-label="Mobile menu">
+
+            <button class="dp__nav__hamburger active first-focusable-element" aria-label="close mobile menu" id="dphamburger_close">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </button>
+            <div class="dp__search" id="dpsearch--mobile" role="dialog" aria-modal="true" aria-label="Search overlay that displays a search input, autocomplete results, and popular topics.">
+    
+    <div class="dp__search__overlay" id="dpsearchoverlay"></div>
+        <div class="lockout">
+            <div class="dp__search__inner">
+                <div class="dp__search__box" id="dpsearchbox">
+                    <span class="dp__search__icon"><img src="/wp-content/uploads/2018/03/icon-search.svg" alt=""></span>
+                    <div class="sr-only">Activating the following search input element will open the search modal.</div>
+                    <label id="searchlabel" class="sr-only" for="dpsearchbox_input" aria-hidden="true">Site search input box.</label>
+                    <input type="text" id="dpsearchbox_input" class="dp__search__input first-focusable-element" aria-describedby="searchlabel" aria-autocomplete="list" aria-controls="dpsuggestions" aria-haspopup="listbox" aria-expanded="false" value="" placeholder="Search">
+                                            <!-- <span class = "dp__search__icon dp__search__icon--submit" id = "dpmobilesearch"><span></span></span> -->
+                                            <ul class="dp__search__suggestions" id="dpsuggestions" role="listbox" aria-labelledby="searchlabel"></ul>
+                </div>
+                <button class="dp__search__close" id="dpsearchclose" aria-label="close"></button>
+            </div>
+        </div>
+
+            </div>
+
+            <ul>
+
+                <li class="dp__nav__item active"><a href="/our-work/" title="Our Work">Our Work</a></li>
+
+                <li class="dp__nav__item"><a href="/our-reports/" title="Reports">Reports</a></li>
+
+                <li class="dp__nav__item"><a href="/our-blog/" title="Blog">Blog</a></li>
+
+                <li class="dp__nav__item"><a href="/about/" title="About">About</a></li>
+
+                <li class="dp__nav__item"><a href="/about/jobs/" class="last-focusable-element" title="Jobs">Jobs</a></li>
+
+            </ul>
+
+        </div>
+
+        
+    </div>
+    <!-- Header Section -->
+    <div class="dp__header dp__header--initiative">
+      <div class="dp__header__inner">
+        <div class="dp__header__description">
+          <h2>Our Reports</h2>
+          <div class="dp__header__description__text">
+            Digital Promise contributes to the education and learning sciences
+            field by publishing research, implementation, and evaluation
+            studies.
+          </div>
+        </div>
+        <div class="dp__header__image_holder">
+          <div class="dp__header__image">
+            <img
+              src="https://digitalpromise.org/wp-content/uploads/2022/11/reports-page-hdr.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <!-- Sidebar -->
+   <div class="col-md-3">
+  <div class="sidebar">
+    <div class="d-flex align-items-center mb-2">
+      <img style="width: 15px;" 
+           src="https://digitalpromise.org/wp-content/themes/devdmbootstrap3/img/icon-home.png" 
+           alt="" class="me-2">
+      <span class="fw-bold">Our Reports</span>
+    </div>
+    <ul class="list-unstyled ms-2">
+      <li>
+        <a href="https://digitalpromise.dspacedirect.org/home" target="_blank" class="custom-link">
+          Digital Promise Resource Repository
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <!-- Intro -->
+<div class="text-center mb-5 intro-section">
+  <p>
+    Our reports on topics of interest—including learner variability, maker education, 
+    and family engagement—put us in conversation<br> with policymakers and thought leaders 
+    on the issues facing education leaders today.
+  </p>
+  <p>
+    To access our full archive of publications, visit the Digital Promise 
+    <a style="color: #1f4dbd;" href="https://digitalpromise.dspacedirect.org/home">Resource Repository</a>.
+  </p>
+  <a href="https://digitalpromise.dspacedirect.org/home" target="_blank" class="resource-btn">
+    Explore the Resource Repository
+  </a>
+</div>
+
+      <!-- Featured Publications -->
+     <div class="container my-5">
+  <div class="text-start mb-5">
+    <h2 class="mb-3">Featured Publications</h2>
+    <p>Discover a selection of resources from across Digital Promise initiatives.</p>
+  </div>
+</div>
+ <!-- Cards -->
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/items/1eeae24c-7a57-4b21-bae8-5351199840e1" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2024/05/VILS-WP-cover-thumbnail.png" class="img-fluid mb-3 card-img-custom" alt="Unintended Impact">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/items/1eeae24c-7a57-4b21-bae8-5351199840e1" target="_blank" class="text-primary text-decoration-underline">
+                Unintended Impact: How the Verizon Innovative Learning Schools Program Affected Its Educators’ Job Satisfaction and Career Trajectories
+              </a>
+            </h6>
+            <p class="small text-muted">
+              While the Verizon Innovative Learning Schools has produced expected results, this paper explores unintended impacts like career advancement and job satisfaction.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/items/73f2e0fa-dca8-4cd0-a8da-eb18b59453c4" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2024/01/CII-v2-wp-cover-thumbnail_r3.png" class="img-fluid mb-3 card-img-custom" alt="A New Narrative">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/items/73f2e0fa-dca8-4cd0-a8da-eb18b59453c4" target="_blank" class="text-primary text-decoration-underline">
+                A New Narrative: How Unlocking the Power of R&D Through Inclusive Innovation Can Transform Education
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Stories, solutions, and learnings from district-community collaborations tackling educational challenges.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/items/6559b261-d6d7-4184-9116-16eb93a9c212" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2023/04/cover-thumbnail@2x.png" class="img-fluid mb-3 card-img-custom" alt="Breaking With the Past">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/items/6559b261-d6d7-4184-9116-16eb93a9c212" target="_blank" class="text-primary text-decoration-underline">
+                Breaking With the Past: Embracing Digital Transformation in Education
+              </a>
+            </h6>
+            <p class="small text-muted">
+              How digital technologies enable learner-centered, personalized education frameworks at scale.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/items/94c25d90-04c6-4fb1-884b-b3b2785cd61f" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2023/03/ReportsPg_partnering-prmt-dig-equity-thmb.png" class="img-fluid mb-3 card-img-custom" alt="Partnering to Promote Equity">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/items/94c25d90-04c6-4fb1-884b-b3b2785cd61f" target="_blank" class="text-primary text-decoration-underline">
+                Partnering to Promote Equity and Digital Learning
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Key features of research-practice partnerships and design choices toward equity and digital learning.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/items/022acc05-90b1-41ca-8670-fbe39552bb4f" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2023/03/ReportsPg_iep-project.png" class="img-fluid mb-3 card-img-custom" alt="The IEP Project">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/items/022acc05-90b1-41ca-8670-fbe39552bb4f" target="_blank" class="text-primary text-decoration-underline">
+                The IEP Project: Whole Learner Teacher Guide
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Reflective questions, strategies, and resources for writing strength-based Individual Education Programs (IEPs).
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/166" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2022/12/cover-thumbnail.png" class="img-fluid mb-3 card-img-custom" alt="Delivering on Digital Equity">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/166" target="_blank" class="text-primary text-decoration-underline">
+                Delivering on the Promise of Digital Equity
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Proposes solutions for advancing digital equity and inclusion through federal funding.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/158" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2022/11/outcomes-practitioner-engagement.png" class="img-fluid mb-3 card-img-custom" alt="Practitioner Engagement">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/158" target="_blank" class="text-primary text-decoration-underline">
+                Outcomes of Increased Practitioner Engagement in Edtech
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Research-practice-industry partnership model and its positive impacts on Edtech development.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/138" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2022/11/comp-thinking.png" class="img-fluid mb-3 card-img-custom" alt="Computational Thinking">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/138" target="_blank" class="text-primary text-decoration-underline">
+                Computational Thinking for an Inclusive World
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Encourages educators to integrate computational thinking into disciplinary learning and shared leadership.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="col-md-4">
+          <div class="text-center">
+            <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/157" target="_blank">
+              <img src="https://digitalpromise.org/wp-content/uploads/2022/11/shifting-mindsets.png" class="img-fluid mb-3 card-img-custom" alt="Shifting Mindsets">
+            </a>
+            <h6 class="fw-semibold">
+              <a href="https://digitalpromise.dspacedirect.org/handle/20.500.12265/157" target="_blank" class="text-primary text-decoration-underline">
+                Shifting Mindsets: Designing Lessons for Learner Variability
+              </a>
+            </h6>
+            <p class="small text-muted">
+              Teachers use the Learner Variability Navigator to find research-based strategies addressing the whole learner.
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+   
+  <div class="lockout">    
+    <div class="get-updates-promo">
+        <div class="lockout">
+            <div class="get-updates-promo__title">
+                <h2>Improving learning with the power of technology</h2>
+            </div>
+            <div class="get-updates-promo__cta">
+                <div>
+                    <p>Let's connect and we'll send you the latest from Digital Promise.</p>
+                    <button class="outline-btn outline-btn--white outline-btn--large open-signup-popup" tabindex="0">Get Updates!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- footer -->
+<footer id="site-footer">
+    <div class="lockout footer">
+       <ul class="footer__links">
+                        <li class="footer__links__link"><a href="https://digitalpromise.org/contact-us/">Contact Us</a></li><li class="footer__links__link"><a href="https://digitalpromise.org/about/careers/">Careers at Digital Promise</a></li><li class="footer__links__link"><a href="https://digitalpromise.org/press-room/">Press Room</a></li><li class="footer__links__link"><a href="https://digitalpromise.org/about/financials/">Financial and Legal Documents</a></li><li class="footer__links__link"><a href="https://digitalpromise.org/terms-of-use/">Terms of Use</a></li>                    </ul>
+        <ul class="footer__social">
+            <li>
+                <a href="https://www.facebook.com/digitalpromise" target="_blank">
+                    <img src="../images/icon-facebook.svg" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/digitalpromise/" target="_blank">
+                    <img class="w-[21px] h-auto" src="../images/icon-instagram.svg" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/digital-promise/" target="_blank">
+                    <img src="../images/icon-linkedin.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/digitalpromise" target="_blank">
+                    <img src="../images/icon-youtube.svg" alt="Youtube">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+ <!-- button sign up -->
+<div id="sticky-get-updates-wrap" class="animate-on">
+    <div id="sticky-get-updates-btn" class="open-signup-popup" tabindex="0">Sign Up For Updates! <img src="../images/icon-email.webp" alt="Email"></div>
+</div>
+
+<div id="updates-form" class="pardot-form-modal active" role="dialog" aria-modal="true" aria-label="Popup form that allows the user to sign up for updates from Digital Promise." style="display: none; opacity: 1;">
+    <div class="updates-form__inner" style="opacity: 1; scale: 1;">
+        <div class="updates-form__inner__header">
+            <h2>Sign up for updates!</h2>
+            <button class="updates-form__inner__close first-focusable-element" aria-label="close" tabindex="0">×</button>
+        </div>
+        <iframe title="Email sign up form" class="pardotform" src="https://go.digitalpromise.org/l/414542/2018-05-01/44p6v9" type="text/html" frameborder="0" allowtransparency="true" style="border: 0"></iframe>
+        <div tabindex="0" aria-label="Empty element to keep user inside the modal while it is active" class="last-focusable-element"></div>
+    </div>
+</div>
+
+
+  <script>
+    function openModal(event) {
+      event.preventDefault();
+      document.getElementById("formModal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("formModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target.classList.contains("modal")) {
+        closeModal();
+      }
+    }
+      window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) { 
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+  </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

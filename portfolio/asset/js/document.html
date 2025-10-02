@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="heading">Hello JavaScript</h1>
+    <p class="text">This is paragraph 1</p>
+
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+// ID se element select karke color change
+
+        let heading = document.getElementById("heading");
+        heading.style.color = "red"; 
+
+       // Class name se element select karke bold karna
+
+        let paragraphs = document.getElementsByClassName("text");
+        paragraphs[0].style.fontWeight = "bold";
+
+// querySelector se first element select karke background change
+
+        let firstPara = document.querySelector(".text");
+        firstPara.style.backgroundColor = "skyblue";
+        
+ // querySelectorAll se saare elements select karke console me dikhana
+ 
+        let allPara = document.querySelectorAll(".text");
+        console.log("All paragraphs:", allPara);
+    </script>
+</body>
+</html>

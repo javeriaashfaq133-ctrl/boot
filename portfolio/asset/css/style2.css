@@ -1,0 +1,85 @@
+.dp__nav {
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.dp__nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+/* Logo */
+.dp__nav__logo img {
+  height: 40px;
+  transition: opacity 0.3s;
+}
+.dp__nav__logo img:hover {
+  opacity: 0.8;
+}
+
+/* Desktop Menu */
+.dp__nav__desktop ul {
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.dp__nav__desktop a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.dp__nav__desktop a:hover,
+.dp__nav__item.active a {
+  color: #c62828; /* Digital Promise red */
+}
+
+/* Hamburger (Mobile) */
+.dp__nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.dp__nav__hamburger span {
+  width: 24px;
+  height: 2px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Mobile Menu */
+@media (max-width: 991px) {
+  .dp__nav__desktop {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    background: #fff;
+    padding: 16px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .dp__nav__desktop.open {
+    display: flex;
+  }
+  .dp__nav__hamburger {
+    display: flex;
+  }
+}

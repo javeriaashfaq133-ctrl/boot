@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bootstrap</title>
+ 
+ 
+    <style>
+      /* Common styles */
+      .divider {
+        width: 100%;
+        height: 3rem;
+        background-color: #0000001a;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: inset 0 0.5em 1.5em #0000001a,
+          inset 0 0.125em 0.5em #00000026;
+      }
+
+      #themeBtn {
+        background-color: blueviolet;
+        color: white;
+        border: none;
+      }
+
+      body.dark-mode {
+        background-color: #121212 !important;
+        color: #ffffff !important;
+      }
+
+      body.dark-mode .form-control {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border-color: #444;
+      }
+
+      body.dark-mode .form-control::placeholder {
+        color: #aaaaaa;
+      }
+
+      body.dark-mode .form-check-label,
+      body.dark-mode label {
+        color: #ffffff;
+      }
+
+      body.dark-mode .bg-body-tertiary {
+        background-color: #2c2c2c !important;
+      }
+
+      body.dark-mode small.text-body-secondary {
+        color: #cccccc !important;
+      }
+
+      body.dark-mode .dropdown-menu {
+        background-color: #2c2c2c;
+        color: #ffffff;
+      }
+
+      body.dark-mode .dropdown-item {
+        color: #ffffff;
+      }
+
+      body.dark-mode .dropdown-item:hover {
+        background-color: #444;
+      }
+     body.dark-mode .border{
+      border: 1px solid rgb(85, 83, 83) !important;
+     }
+     body.dark-mode .border-bottom{
+      border-bottom: 1px solid rgb(85, 83, 83) !important;
+     }
+
+    </style>
+  </head>
+  <body>
+    <section class="modebtn">
+      <div
+        id="modeToggle"
+        class="btn-group dropup"
+        style="position: fixed; bottom: 20px; right: 20px; z-index: 1050"
+      >
+        <button
+          id="themeBtn"
+          type="button"
+          class="btn btn-secondary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item mode-option" href="#" data-mode="light" data-icon="☀"
+              > <i class="fa-solid fa-sun"></i> light</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item mode-option" href="#" data-mode="dark" data-icon="🌙"
+              ><i class="fa-solid fa-moon"></i> Dark</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item mode-option" href="#" data-mode="auto" data-icon="🔄"
+            > <i class="fa-solid fa-arrows-rotate"></i> auto</a
+            >
+          </li>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section">
+      <div class="text-center py-5 px-5 my-5">
+        <img
+          src="../images/bootstrap-logo.svg"
+          alt="logo"
+          class="d-block mx-auto mb-4"
+          width="72"
+        />
+        <h1 class="display-5  fw-bold">Centered Hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              Primary button
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Secondary
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <section class="section">
+      <div class="text-center pt-5 px-4 my-5 border-bottom">
+        <h1 class="display-4  fw-bold">
+          Centered screenshot
+        </h1>
+        <div class="col-lg-6 mx-auto mb-5">
+          <p class="lead mb-4">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-2">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              Primary button
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              Secondary
+            </button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5">
+            <img
+              src="../images/bootstrap-docs (1).png"
+              alt="screenshot"
+              class="image-fluid border rounded-3 shadow-lg mb-4"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="../images/bootstrap-themes.png"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-4  fw-bold mb-3 lh-1">
+              Responsive left-aligned hero with image
+            </h1>
+            <p class="lead">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Primary
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Default
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row flex-lg-row align-items-center g-5 py-5 mb-5 mt-5">
+          <div class="col-lg-7">
+            <h1 class="display-4  fw-bold mb-3 lh-1">
+              Vertically centered <br />
+              hero sign-up form
+            </h1>
+            <p class="fs-4 col-lg-10">
+              Below is an example form built entirely with Bootstrap’s form
+              controls. Each required form group has a validation state that can
+              be <br />
+              triggered by attempting to submit the form without completing it.
+            </p>
+          </div>
+          <div class="col-10 col-sm-8 col-lg-5">
+            <form
+              action="#"
+              class="p-4 p-md-5 border rounded-3 bg-body-tertiary"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                />
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="rememberPasswordCheck"
+                />
+                <label class="form-check-label" for="rememberPasswordCheck">
+                  Remember Me
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="submit">
+                Sign up
+              </button>
+              <hr class="my-4" />
+              <small class="text-body-secondary"
+                >By clicking Sign up, you agree to the terms of use.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <section class="section">
+      <div class="container my-5">
+        <div
+          class="row p-4 pb-0 pe-lg-0 pt-lg-4 mt-5 align-items-center rounded-3 border shadow-lg"
+        >
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 ">
+              Border hero with cropped image and shadows
+            </h1>
+            <p class="lead">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit,
+              featuring Sass variables and mixins, responsive grid system,
+              extensive prebuilt components, and powerful JavaScript plugins.
+            </p>
+            <div
+              class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
+            >
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+              >
+                Primary
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Default
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg mt-4">
+            <img
+              src="../images/bootstrap-docs (2).png"
+              alt=""
+              class="rounded-lg-3"
+              width="720"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+    <section class="section">
+      <div class="text-center py-5 px-5 bg-dark text-secondary">
+        <h1 class="display-5 fw-bold text-white mt-5">Dark Color Hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system,
+            extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-4 d-sm-flex justify-content-sm-center mb-5">
+            <button
+              type="button"
+              class="btn btn-outline-info btn-lg px-4 gap-3"
+            >
+              Custom button
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">
+              Secondary
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function applyMode(mode, icon) {
+          if (mode === "dark") {
+            $("body").addClass("dark-mode").removeClass("bg-white text-dark");
+          } else if (mode === "light") {
+            $("body").removeClass("dark-mode").addClass("bg-white text-dark");
+          } else if (mode === "auto") {
+            if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+              $("body").addClass("dark-mode").removeClass("bg-white text-dark");
+            } else {
+              $("body").removeClass("dark-mode").addClass("bg-white text-dark");
+            }
+          }
+          // Set button emoji
+          $("#themeBtn").text(icon);
+          // Save to localStorage
+          localStorage.setItem("themeMode", mode);
+          localStorage.setItem("themeIcon", icon);
+        }
+
+        // Load saved mode & icon
+        let savedMode = localStorage.getItem("themeMode") || "auto";
+        let savedIcon = localStorage.getItem("themeIcon") || "⚙";
+        applyMode(savedMode, savedIcon);
+
+        // Handle option click
+        $(".mode-option").click(function (e) {
+          e.preventDefault();
+          let selectedMode = $(this).data("mode");
+          let selectedIcon = $(this).data("icon");
+          applyMode(selectedMode, selectedIcon);
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
